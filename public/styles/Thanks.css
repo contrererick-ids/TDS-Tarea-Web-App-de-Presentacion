@@ -1,0 +1,64 @@
+/* ===========================
+   Thanks Page
+   =========================== */
+.thanks-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: var(--bg-light);
+}
+
+.thanks-container i {
+    font-size: 5rem;
+    color: var(--primary-color);
+    margin-bottom: 24px;
+    animation: fadeInDown 0.6s ease;
+}
+
+.thanks-container h1 {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 16px;
+    animation: fadeInUp 0.6s ease 0.1s both;
+}
+
+.thanks-container p {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 32px;
+    max-width: 400px;
+    animation: fadeInUp 0.6s ease 0.2s both;
+}
+
+.thanks-container .btn {
+    animation: fadeInUp 0.6s ease 0.3s both;
+}
+
+/* ===========================
+   Botones (compartido)
+   =========================== */
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: var(--transition);
+    cursor: pointer;
+    border: none;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+}
