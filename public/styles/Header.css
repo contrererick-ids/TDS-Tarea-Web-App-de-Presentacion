@@ -1,0 +1,13 @@
+/* ===========================
+   Header
+   =========================== */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1e1c28;
+    border-bottom: 1.5px solid rgb(109, 109, 109);
+    box-shadow: 15px 0px 7px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
