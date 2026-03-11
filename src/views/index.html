@@ -10,16 +10,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header className="header">
-        <nav className="navbar">
-            <div className="container">
-                <div className="nav-brand">
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
                   <a href="#home">EC</a>
                 </div>
             
                 <button
-                  className="nav-toggle"
-                  onClick={toggleMenu}
+                  class="nav-toggle"
                   aria-label="Toggle navigation"
                 >
                   <span></span>
@@ -27,22 +26,528 @@
                   <span></span>
                 </button>
             
-                <ul className={`nav-menu ${isOpen ? "active" : ""}`}>
-                  <li><a href="#home" className="nav-link">Inicio</a></li>
-                  <li><a href="#about" className="nav-link">Sobre Mí</a></li>
-                  <li><a href="#skills" className="nav-link">Habilidades</a></li>
-                  <li><a href="#projects" className="nav-link">Proyectos</a></li>
-                  <li><a href="#experience" className="nav-link">Experiencia</a></li>
-                  <li><a href="#contact" className="nav-link">Contacto</a></li>
+                <ul class=nav-menu>
+                  <li><a href="#home" class="nav-link">Inicio</a></li>
+                  <li><a href="#about" class="nav-link">Sobre Mí</a></li>
+                  <li><a href="#skills" class="nav-link">Habilidades</a></li>
+                  <li><a href="#projects" class="nav-link">Proyectos</a></li>
+                  <li><a href="#experience" class="nav-link">Experiencia</a></li>
+                  <li><a href="#contact" class="nav-link">Contacto</a></li>
                 </ul>
             </div>
         </nav>
     </header>
+
+    <section id="home" class="hero">
+      <div class="hero-content">
+
+        <div class="hero-text">
+          <p class="hero-greeting">Hola, soy</p>
+          <h1 class="hero-name">Erick Contreras</h1>
+          <h2 class="hero-title">Desarrollador Full Stack</h2>
+          <p class="hero-description">
+            Creando experiencias web innovadoras y soluciones tecnológicas
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              Ver Proyectos
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              Contactar
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <div class="image-placeholder">
+            <img
+              src="/assets/images/profile-photo-eacs.jpeg"
+              alt="Erick Contreras"
+              class="profile-img"
+            />
+            </div>
+        </div>
+    </div>
+
+      <div class="scroll-down">
+        <a href="#about">
+          <i class="fas fa-chevron-down"></i>
+        </a>
+      </div>
+    </section>
+
+    <section id="about" class="about section">
+      <div class="container">
+
+        <h2 class="section-title">Sobre Mí</h2>
+        <div class="about-content">
+          <div class="about-image">
+            <img
+              src="/assets/images/profile-photo-eacs.jpeg"
+              alt="Erick Contreras"
+              class="profile-img"
+            />
+          </div>
+
+          <div class="about-text">
+            <h3>Desarrollador apasionado por la tecnología</h3>
+            <p>
+              Con experiencia en el desarrollo de aplicaciones web modernas,
+              me especializo en crear soluciones eficientes y escalables.
+              Mi enfoque se centra en escribir código limpio, mantener las
+              mejores prácticas y estar siempre actualizado con las últimas tecnologías.
+            </p>
+            <p>
+              Me apasiona resolver problemas complejos y transformar ideas en
+              productos digitales funcionales que mejoren la experiencia del usuario.
+            </p>
+
+            <div class="about-info">
+              <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Guadalajara, Jalisco, México</span>
+              </div>
+
+              <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <span>erick.alejandro16@outlook.com</span>
+              </div>
+
+              <div class="info-item">
+                <i class="fas fa-graduation-cap"></i>
+                <div class="about-text-description">
+                  <span>Ingeniería en Desarrollo de Software</span>
+                  <p>ITESO (Agosto 2024 - Actualidad)</p>
+                </div>
+              </div>
+
+            </div>
+            <a href="/assets/cv/CV_Erick_Contreras.pdf"
+            download
+            class="btn btn-primary"
+            >
+              <i class="fas fa-download"></i> Descargar CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills section">
+      <div class="container">
+
+        <h2 class="section-title-white">Habilidades</h2>
+        <div class="skills-grid">
+
+          <!-- Lenguajes -->
+          <div class="skill-category">
+            <div class="skills-desciption">
+              <h3><i class="fas fa-solid fa-code"></i> Lenguajes</h3>
+              <div class="skills-tags">
+                <span class="skill-tag">C</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Java</span>
+              </div>
+            </div>
+            <div class="carousel-wrapper">
+              <div class="carousel-track">
+                <div class="carousel-item">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" title="C" />
+                </div>
+                <div class="carousel-item">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python" />
+                </div>
+                <div class="carousel-item">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" title="Java" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Frontend -->
+          <div class="skill-category">
+            <div class="skills-desciption">
+              <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+              <div class="skills-tags">
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">TypeScript</span>
+                <span class="skill-tag">React</span>
+              </div>
+            </div>
+            <div class="carousel-wrapper">
+              <div class="carousel-track">
+                <div class="carousel-item">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" title="HTML5" />
+                </div>
+                <div class="carousel-item">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" title="CSS3" />
+                </div>
+                <div class="carousel-item">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript" />
+                </div>
+                <div class="carousel-item">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" title="TypeScript" />
+                </div>
+                <div class="carousel-item">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" title="React" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Backend -->
+          <div class="skill-category">
+            <div class="skills-desciption">
+              <h3><i class="fas fa-server"></i> Backend</h3>
+              <div class="skills-tags">
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">Express</span>
+                <span class="skill-tag">Vite</span>
+                <span class="skill-tag">Flask</span>
+                <span class="skill-tag">FastAPI</span>
+              </div>
+            </div>
+            <div class="carousel-wrapper">
+              <div class="carousel-track">
+                <div class="carousel-item">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" title="Node.js" />
+                </div>
+                <div class="carousel-item">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" title="Express" />
+                </div>
+                <div class="carousel-item">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vite/vite-original.svg" alt="Vite" title="Vite" />
+                </div>
+                <div class="carousel-item">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" title="Flask" />
+                </div>
+                <div class="carousel-item">
+                  <img src="https://imgs.search.brave.com/bntF6Zso0YzhcVWJvRYhdd-WOiWyaTdcRO_p_ME8GzM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/d29ybGR2ZWN0b3Js/b2dvLmNvbS9sb2dv/cy9mYXN0YXBpLTEu/c3Zn" alt="FastAPI" title="FastAPI" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Herramientas -->
+          <div class="skill-category">
+            <div class="skills-desciption">
+              <h3><i class="fas fa-tools"></i> Herramientas</h3>
+              <div class="skills-tags">
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">GitHub</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">Postman</span>
+              </div>
+            </div>
+            <div class="carousel-wrapper">
+              <div class="carousel-track">
+                <div class="carousel-item">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" title="Git" />
+                </div>
+                <div class="carousel-item">
+                  <img src="https://cdn.jsdelivr.net/npm/devicons@1.8.0/!SVG/github_badge.svg" alt="GitHub" title="GitHub" />
+                </div>
+                <div class="carousel-item">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" title="Docker" />
+                </div>
+                <div class="carousel-item">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman" title="Postman" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bases de Datos -->
+          <div class="skill-category">
+            <div class="skills-desciption">
+              <h3><i class="fas fa-database"></i> Bases de Datos</h3>
+              <div class="skills-tags">
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">MongoDB</span>
+              </div>
+            </div>
+            <div class="carousel-wrapper">
+              <div class="carousel-track">
+                <div class="carousel-item">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" title="MySQL" />
+                </div>
+                <div class="carousel-item">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" title="MongoDB" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cloud -->
+          <div class="skill-category">
+            <div class="skills-desciption">
+              <h3><i class="fas fa-solid fa-cloud"></i> Cloud</h3>
+              <div class="skills-tags">
+                <span class="skill-tag">AWS</span>
+              </div>
+            </div>
+            <div class="carousel-wrapper">
+              <div class="carousel-track">
+                <div class="carousel-item">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS" title="AWS" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects section">
+      <div class="container">
+        <h2 class="section-title">Proyectos Destacados</h2>
+
+        <div class="projects-grid">
+
+          <!-- Lista de proyectos -->
+          <div class="projects-list-column">
+            <div class="projects-list-item active" onclick="selectProject(0)">
+              <h3>API para TheMovieDB</h3>
+            </div>
+            <div class="projects-list-item" onclick="selectProject(1)">
+              <h3>Validador de Reportes de Sangre</h3>
+            </div>
+          </div>
+
+          <!-- Tarjetas de proyectos -->
+          <div class="projects-cards-column">
+
+            <div class="project-card" id="project-0">
+              <div class="project-image">
+                <img src="/assets/images/api-themoviedb-img-1.png" alt="API para TheMovieDB" />
+                <div class="project-overlay">
+                  <a href="#" class="project-link">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="project-link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3>API para TheMovieDB</h3>
+                <div class="project-tags">
+                  <span class="tag">Javascript</span>
+                  <span class="tag">Node.js</span>
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                </div>
+                <p>Una aplicación de búsqueda de películas con Node.js y JavaScript, impulsada por la API de The Movie Database (TMDB). Este proyecto demuestra el uso de un proxy en el backend para el consumo de APIs.</p>
+              </div>
+            </div>
+
+            <div class="project-card" id="project-1" style="display:none;">
+              <div class="project-image">
+                <img src="/assets/images/blood-report-validator-img-1.jpg" alt="Validador de Reportes de Sangre" />
+                <div class="project-overlay">
+                  <a href="#" class="project-link">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="project-link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3>Validador de Reportes de Sangre</h3>
+                <div class="project-tags">
+                  <span class="tag">Python</span>
+                </div>
+                <p>Un analizador léxico y sintáctico para reportes de laboratorio médico, específicamente diseñado para analizar y validar reportes de Biometría Hemática (CBC) / Hematología en formato JSON. Este proyecto implementa el front-end de un compilador utilizando PLY (Python Lex-Yacc) para analizar datos estructurados de laboratorio médico. Realiza tanto análisis léxico (tokenización) como análisis sintáctico (parsing) para validar la estructura y el contenido de reportes de hematología.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="experience section">
+      <div class="experience-grid">
+        <div class="container">
+          <h2 class="section-title">Experiencia Laboral</h2>
+
+          <div class="experience-timeline">
+
+            <!-- TyT Contact Center -->
+            <div class="experience-list-item">
+              <div class="experience-item-img">
+                <img src="https://tytcenter.com/_next/image?url=%2Fimages%2Flogo%2FIcon.png&w=256&q=100" alt="TyT Contact Center" />
+              </div>
+              <div class="experience-item-banner">
+                <h3 class="job-title">Atención a Clientes - Cuentas Corporativas</h3>
+                <p class="job-company">TyT Contact Center</p>
+                <p class="job-tenure">Enero 2023 - Actualmente</p>
+                <p class="description">Prestación de servicios a diversos distribuidores en todo el país, gestionando consultas y resolviendo problemas para garantizar altos niveles de satisfacción del cliente. Colaboración con diversos equipos para responder rápidamente a solicitudes relacionadas con el servicio y brindar soluciones técnicas. Realización de escalamientos adecuados y derivación de consultas a canales de soporte específicos para asegurar una resolución efectiva de los problemas.</p>
+              </div>
+            </div>
+
+            <!-- Herbalife -->
+            <div class="experience-list-item">
+              <div class="experience-item-img">
+                <img src="https://www.herbalife.com/dmassets/global-reusable-assets/brandmark-logo/h1-header-logo.png?fmt=webp-alpha" alt="Herbalife" />
+              </div>
+              <div class="experience-item-banner">
+                <h3 class="job-title">Científico de Datos</h3>
+                <p class="job-company">Herbalife</p>
+                <p class="job-tenure">Diciembre 2021 - Diciembre 2022</p>
+                <p class="description">Creación de algoritmos y desarrollo de código para la automatización de procesos. Automatización de reportes utilizando lenguajes de programación para análisis estadístico. Evaluación, análisis e interpretación de resultados, métricas y grandes volúmenes de datos. Generación de dashboards, gráficos y presentaciones de grandes volúmenes de datos de forma concisa y comprensible.</p>
+              </div>
+            </div>
+
+            <!-- Instituto de Capacitación Lagos -->
+            <div class="experience-list-item">
+              <div class="experience-item-img">
+                <img src="https://imgs.search.brave.com/iiCphnU1yjT_4byKF0hhOOxAjk1oJI9LPAx2ykmsuG8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWc3/Ny51ZW5pY2RuLmNv/bS9pbWFnZS91cGxv/YWQvdjE2NTc4MzQ4/OTUvYnVzaW5lc3Mv/YTBmMjUzMzctY2U4/OC00MzcxLTgxYTIt/NDEzOGMyODc3ZTNk/LmpwZw" alt="Instituto de Capacitación Lagos" />
+              </div>
+              <div class="experience-item-banner">
+                <h3 class="job-title">Instructor de Diseño Gráfico</h3>
+                <p class="job-company">Instituto de Capacitación Lagos</p>
+                <p class="job-tenure">Noviembre 2022 - Actualmente</p>
+                <p class="description">Creación de plan de estudios para conocer y aprender a utilizar herramientas de diseño gráfico de la suite de Adobe. Impartición de clases y enseñanza de temas relacionados a la disciplina del diseño gráfico.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section">
+      <div class="container">
+        <h2 class="section-title">Contacto</h2>
+
+        <div class="contact-content">
+
+          <!-- INFO -->
+          <div class="contact-info">
+            <h3>¿Trabajemos juntos?</h3>
+            <p>
+              Estoy disponible para nuevos proyectos y colaboraciones.
+              No dudes en contactarme a través de cualquiera de estos medios.
+            </p>
+
+            <div class="contact-details">
+
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <h4>Email</h4>
+                  <a href="mailto:erick.alejandro16@outlook.com">
+                    erick.alejandro16@outlook.com
+                  </a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <h4>Teléfono</h4>
+                  <a href="tel:+523312345678">+52 33 1234 5678</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <h4>Ubicación</h4>
+                  <p>Guadalajara, Jalisco, México</p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="social-links">
+                <a href="https://github.com/contrererick"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a
+                    href="https://www.linkedin.com/in/erick-alejandro-contreras-salas/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+                <a
+                    href="https://www.instagram.com/contrererick/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+          </div>
+
+          <!-- FORM -->
+          <div class="contact-form-wrapper">
+            <form class="contact-form">
+
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Nombre"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="subject"
+                  placeholder="Asunto"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <textarea
+                  name="message"
+                  placeholder="Mensaje"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary">
+                <i class="fas fa-paper-plane"></i> Enviar Mensaje
+              </button>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
     <footer class="footer">
         <div class="container">
             <p>&copy; 2026 Erick Contreras. Todos los derechos reservados.</p>
             <p>Hecho en Guadalajara</p>
         </div>
     </footer>
+
 </body>
 </html>
