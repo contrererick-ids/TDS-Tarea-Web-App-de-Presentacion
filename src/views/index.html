@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Erick Contreras - Desarrollador Web">
+    <title>Erick Contreras | Portfolio</title>
+    <link rel="stylesheet" href="/assets/styles/main.css">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header className="header">
+        <nav className="navbar">
+            <div className="container">
+                <div className="nav-brand">
+                  <a href="#home">EC</a>
+                </div>
+            
+                <button
+                  className="nav-toggle"
+                  onClick={toggleMenu}
+                  aria-label="Toggle navigation"
+                >
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+            
+                <ul className={`nav-menu ${isOpen ? "active" : ""}`}>
+                  <li><a href="#home" className="nav-link">Inicio</a></li>
+                  <li><a href="#about" className="nav-link">Sobre Mí</a></li>
+                  <li><a href="#skills" className="nav-link">Habilidades</a></li>
+                  <li><a href="#projects" className="nav-link">Proyectos</a></li>
+                  <li><a href="#experience" className="nav-link">Experiencia</a></li>
+                  <li><a href="#contact" className="nav-link">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Erick Contreras. Todos los derechos reservados.</p>
+            <p>Hecho en Guadalajara</p>
+        </div>
+    </footer>
+</body>
+</html>
